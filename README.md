@@ -28,14 +28,13 @@
 
 ---
 
-## 2. Training Datasets
+## 2. Training Datasets for Document Understanding
 
 아래 표는 MLLM의 사전학습(Pre-training) 및 명령어 튜닝(Instruction Tuning)을 위해 사용된 주요 데이터셋을 정리한 것입니다. 각 데이터셋의 모달리티, 설명, 크기, 출처, 사용 단계가 포함되어 있습니다.
 
 | Dataset       | Modalities                | Description                                                   | Size           | Source                        | Link                                                                                 | Phase                               |
 |:--------------|:--------------------------|:--------------------------------------------------------------|:---------------|:------------------------------|:-------------------------------------------------------------------------------------|:------------------------------------|
-| CASIA-HWDB    | Handwritten Characters    | 중국어 손글씨 문자 인식용 대규모 데이터셋                     | Unknown        | Chinese Academy of Sciences   | https://www.nlpr.ia.ac.cn/databases/handwriting/Home.html                            | Pre-training                        |
-| CCpdf         | PDF-Text                  | 웹에서 수집된 PDF 문서를 기반으로 한 대규모 데이터셋          | Unknown        | Hugging Face                  | https://huggingface.co/datasets/ccpdf                                                | Pre-training                        |
+| CCpdf         | PDF-Text                  | 웹에서 수집된 PDF 문서를 기반으로 한 다국어 대규모 데이터셋          | Unknown        | Hugging Face                  | https://huggingface.co/datasets/ccpdf                                                | Pre-training                        |
 | ChartQA       | Chart-Text                | 차트 이미지로부터 정보를 추출하고 질문에 답하는 QA 데이터셋   | 20K QA pairs   | UW                            | https://github.com/vis-nlp/ChartQA                                                   | Pre-training / Instruction Tuning   |
 | DeepForm      | Form-Text                 | 문서 폼 인식을 위한 시각적-텍스트 데이터셋                    | Unknown        | NVIDIA                        | https://github.com/NVIDIA/DeepForm                                                   | Pre-training / Instruction Tuning   |
 | DocVQA        | Document QA               | 문서 이미지로부터 QA를 수행하는 시각적 문서이해 데이터셋      | 50K+           | Microsoft                     | https://docvqa.org/                                                                  | Pre-training / Instruction Tuning   |
@@ -57,7 +56,7 @@
 | OCR-TROSD     | OCR                       | 텍스트 인식을 위한 중국어 OCR 데이터                          | Unknown        | Tianchi                       | https://tianchi.aliyun.com/competition/entrance/531937/introduction                  | Instruction Tuning                  |
 | WTQ           | Table QA                  | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | 22K            | Stanford                      | https://nlp.stanford.edu/software/sempre/#wtq                                        | Instruction Tuning                  |
 
-## LLaVA 모델 학습 데이터
+## 3. LLaVA 모델 학습 데이터
 
 LLaVA (Large Language and Vision Assistant)는 멀티모달 명령어 이해를 위해 다음과 같은 데이터셋을 사용하여 학습되었습니다.
 
@@ -79,13 +78,13 @@ LLaVA (Large Language and Vision Assistant)는 멀티모달 명령어 이해를 
 - GitHub: [haotian-liu/LLaVA](https://github.com/haotian-liu/LLaVA)
 - 논문: [Visual Instruction Tuning](https://arxiv.org/abs/2304.08485)
 
-## Gemma 모델 학습 토큰 요약
+## 4. Gemma 모델 학습 토큰 요약
 
 Gemma 3 시리즈는 모델 규모에 따라 서로 다른 양의 토큰으로 학습되었습니다. 가장 큰 **Gemma 3 27B** 모델은 총 **14조(14T)** 토큰으로 학습되었으며, **Gemma 3 12B** 모델은 **12조(12T)** 토큰, **Gemma 3 4B** 모델은 **4조(4T)** 토큰, **Gemma 3 1B** 모델은 **2조(2T)** 토큰으로 각각 학습되었습니다. 이러한 차등적 학습 토큰 설계는 모델 크기에 따른 학습 효율성과 성능 균형을 고려한 구조입니다.
 
 ---
 
-## 3. Benchmarks
+## 5. Benchmarks
 
 | Benchmark | Description | Task Type | Link |
 |-----------|-------------|-----------|------|
@@ -97,7 +96,7 @@ Gemma 3 시리즈는 모델 규모에 따라 서로 다른 양의 토큰으로 �
 
 ---
 
-## 4. Leaderboards
+## 6. Leaderboards
 
 - [LLaVA Leaderboard](https://llava-vl.github.io/)
 - [MMMU Leaderboard](https://mmmu-benchmark.github.io/)
@@ -106,7 +105,7 @@ Gemma 3 시리즈는 모델 규모에 따라 서로 다른 양의 토큰으로 �
 
 ---
 
-## 5. Related Open-Source Projects
+## 7. Related Open-Source Projects
 
 - [LLaVA](https://github.com/haotian-liu/LLaVA)
 - [MiniGPT-4](https://github.com/Vision-CAIR/MiniGPT-4)
@@ -118,7 +117,7 @@ Gemma 3 시리즈는 모델 규모에 따라 서로 다른 양의 토큰으로 �
 
 ---
 
-## 6. References
+## 8. References
 
 - Papers with Code: [https://paperswithcode.com/](https://paperswithcode.com/)
 - HuggingFace Model Zoo: [https://huggingface.co/models](https://huggingface.co/models)
