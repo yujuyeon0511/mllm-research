@@ -42,20 +42,37 @@
 | FigureQA      | 도형 차트를 활용한 시각적 QA용 합성 데이터                    | Train: 1,300,000 QA / 100,000 img<br>Test-Familiar: 250,000 QA / 20,000 img<br>Test-Novel: 250,000 QA / 20,000 img          | https://www.microsoft.com/en-us/research/project/figureqa-dataset/downloads/                                              |
 | InfoVQA       | 인포그래픽 기반 복잡한 시각 정보 질의응답                     | Train: 23946 QA / 4406 img<br>Val: 2801 QA / 500 img<br>Test: 3288 QA / 579 img        | https://github.com/Chan1121/InfoVQA                                                |
 | KLC           | 차트 이미지와 대응하는 설명 생성 및 QA                        | Unknown        | https://github.com/salesforce/KLC                                                  |
-| OCRVQA        | OCR 결과와 결합된 QA용 시각문서 데이터셋                      | 1M             | https://ocr-vqa.github.io/                                     |
+| OCRVQA        | OCR 결과와 결합된 QA용 시각문서 데이터셋                      | 1,002,146 QA / 207,572 img             | https://ocr-vqa.github.io/                                     |
 | PlotQA        | 플롯 이미지로부터 정보 추출을 위한 QA                         | Train: 20,249,479 QA / 157,070 img<br>Val: 4,360,648 QA / 33,650 img<br>Test: 4,342,514 QA / 33,657 img           | https://github.com/NiteshMethani/PlotQA                                                 |
 | PubTabNet     | 표 구조를 인식하고 재구성하기 위한 OCR 데이터                 | Unknown           | https://github.com/ibm-aur-nlp/PubTabNet                                           |
-| RVL-CDIP      | 문서 유형 분류를 위한 다양한 스캔 문서                        | 400K           | https://huggingface.co/datasets/aharley/rvl_cdip                                          |
-| SynthDog      | 문서 OCR을 위한 합성 데이터셋(영어)                                 | 0.5M        | https://huggingface.co/datasets/naver-clova-ix/synthdog-en                                                |
-| SynthDog-ko      | 문서 OCR을 위한 합성 데이터셋(한국어)                                 | 0.5M        | https://huggingface.co/datasets/naver-clova-ix/synthdog-ko                                                |
-| TAT-QA        | 표 데이터를 기반으로 수치적 질의응답을 수행하는 데이터셋      | 16K            | https://nextplusplus.github.io/TAT-QA/                                            |
-| TAT-DQA        | 문서 데이터를 기반으로 수치적 질의응답을 수행하는 데이터셋      | 16K            | https://nextplusplus.github.io/TAT-DQA/                                             |
+| RVL-CDIP      | 문서 유형 분류를 위한 다양한 스캔 문서                        | Train: 320,000 QA / 320,000 img<br>Val: 40,000 QA / 40,000 img<br>Test: 40,000 QA / 40,000 img           | https://huggingface.co/datasets/aharley/rvl_cdip                                          |
+| SynthDog      | 문서 OCR을 위한 합성 데이터셋(영어)                                 | 65,983 QA / img         | https://huggingface.co/datasets/naver-clova-ix/synthdog-en                                                |
+| SynthDog-ko      | 문서 OCR을 위한 합성 데이터셋(한국어)                                 | 65,983 QA / img        | https://huggingface.co/datasets/naver-clova-ix/synthdog-ko                                                |
+| TAT-QA        | 표 데이터를 기반으로 수치적 질의응답을 수행하는 데이터셋      | Train: 13215 QA / 2201 Doc<br>Val: 1668 QA / 278 Doc<br>Test: 1669 QA / 278 Doc            | https://nextplusplus.github.io/TAT-QA/                                            |
+| TAT-DQA        | 재무 보고서 데이터를 기반으로 수치적 질의응답을 수행하는 데이터셋      | Train: 13251 QA / 2207 Doc<br>Val: 1663 QA / 277 Doc<br>Test: 1644 QA / 274 Doc            | https://nextplusplus.github.io/TAT-DQA/                                             |
 | VisualMRC     | 문서 이미지와 텍스트 기반 다중모달 머신 독해                  | Unknown        | https://github.com/yoheikikuta/visualmrc                                           |
-| WildReceipt   | 영수증 이미지의 OCR 및 정보 추출                              | 25K            | https://github.com/AlibabaResearch/AdvancedLiterateMachinery/tree/main/WildReceipt |
-| DocILE        | 문서의 필드 인식 및 구조적 태깅을 위한 벤치마크               | Unknown        | https://github.com/rossumai/docile                                                 |
-| InsuranceQA   | 보험 관련 FAQ에 대한 질의응답 데이터셋                        | 27K            | https://github.com/shuzi/insuranceQA                                               |
-| OCR-TROSD     | 텍스트 인식을 위한 중국어 OCR 데이터                          | Unknown        | https://tianchi.aliyun.com/competition/entrance/531937/introduction                |
-| WTQ           | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | 22K            | https://nlp.stanford.edu/software/sempre/#wtq                                      |
+| WildReceipt   | 영수증 이미지의 OCR 및 정보 추출                              | Unknown            | https://paperswithcode.com/dataset/wildreceipt |
+| DocILE        | 문서의 필드 인식 및 구조적 태깅을 위한 벤치마크               | Unknown        | https://docile.rossum.ai/                                                 |
+| WTQ           | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | Unknown            | https://ppasupat.github.io/WikiTableQuestions/                                      |
+| askchart           | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | Unknown            | https://ppasupat.github.io/WikiTableQuestions/                                      |
+| chart2code           | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | Unknown            | https://ppasupat.github.io/WikiTableQuestions/                                      |
+| chartinstruction           | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | Unknown            | https://ppasupat.github.io/WikiTableQuestions/                                      |
+| chartmoe           | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | Unknown            | https://ppasupat.github.io/WikiTableQuestions/                                      |
+| deeprule           | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | Unknown            | https://ppasupat.github.io/WikiTableQuestions/                                      |
+| novachart           | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | Unknown            | https://ppasupat.github.io/WikiTableQuestions/                                      |
+| chart2textpew           | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | Two: 5092 QA<br>Multi: 26476 QA            | https://ppasupat.github.io/WikiTableQuestions/                                      |
+| chart2textstatista           | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | Two: 47404 QA<br>Multi: 11774 QA              | https://ppasupat.github.io/WikiTableQuestions/                                      |
+| chart2textstatista-table           | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | Two: 23702 QA<br>Multi: 5887 QA              | https://ppasupat.github.io/WikiTableQuestions/                                      |
+
+
+| chart2text-8k           | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | Single: 6415 QA<br>Multi: 1447 QA              | https://ppasupat.github.io/WikiTableQuestions/                                      |
+| chart2text-8k-table           | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | Single: 6763 QA<br>Multi: 1542 QA              | https://ppasupat.github.io/WikiTableQuestions/                                      |
+
+| chartllama          | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | Train: 148398 QA            | https://ppasupat.github.io/WikiTableQuestions/                                      |
+| chartsumm          | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | TrainK: 34702 QA / TrainS: 32186 QA<br>ValK: 4338 QA / ValK: 4092 QA           | https://ppasupat.github.io/WikiTableQuestions/                                      |
+| opencqa          | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | Train: 4605 QA<br>Val: 983            | https://ppasupat.github.io/WikiTableQuestions/                                      |
+| vistext          | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | Train: 9969 QA<br>Val: 1202             | https://ppasupat.github.io/WikiTableQuestions/                                      |
+| chartqa2table          | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | Train: 73268 QA<br>Val: 4224             | https://ppasupat.github.io/WikiTableQuestions/                                      |
 
 
 
