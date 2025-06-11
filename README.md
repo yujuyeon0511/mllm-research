@@ -71,8 +71,8 @@
 | vistext                     | 차트 이미지와 텍스트 결합 기반의 시각 질문 응답 태스크용 차트 QA 데이터셋                   | Train: 9969 QA<br>Val: 1202                         | https://huggingface.co/datasets/mPLUG/TinyChartData                                                                    |
 | chartqa2table               | 기존 ChartQA 데이터를 테이블 형태로 재구성한 차트 QA를 위한 정형화된 QA 데이터셋             | Train: 73268 QA<br>Val: 4224                        | https://huggingface.co/datasets/mPLUG/TinyChartData                                                               |
 | ReachQA               | 기존 ChartQA 데이터를 테이블 형태로 재구성한 차트 QA를 위한 정형화된 QA 데이터셋             | Train: 73268 QA<br>Val: 4224                        | https://github.com/hewei2001/ReachQA                              |
-| ReFocus               | 기존 ChartQA 데이터를 테이블 형태로 재구성한 차트 QA를 위한 정형화된 QA 데이터셋             | Train: 73268 QA<br>Val: 4224                        | https://github.com/zeyofu/ReFocus_Code
-                              |
+| ReFocus               | 기존 ChartQA 데이터를 테이블 형태로 재구성한 차트 QA를 위한 정형화된 QA 데이터셋             | Train: 73268 QA<br>Val: 4224                        | https://github.com/zeyofu/ReFocus_Code |
+
 
 ## 3. LLaVA 모델 학습 데이터
 
