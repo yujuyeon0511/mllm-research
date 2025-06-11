@@ -35,7 +35,7 @@
 | Dataset       | Description                                                   | Size           | Link                                                                                 |
 |:--------------|:--------------------------------------------------------------|:---------------|:-------------------------------------------------------------------------------------|
 | CCpdf         | 웹에서 수집된 PDF 문서를 기반으로 한 다국어 대규모 데이터셋          | Unknown        | https://github.com/applicaai/CCpdf                                                  |
-| ChartQA(train) | 차트 이미지로부터 정보를 추출하고 질문에 답하는 QA 데이터셋          | 28,299 QA pairs / 18,317 images | https://huggingface.co/datasets/ahmed-masry/ChartQA                               |
+| ChartQA(train) | 차트 이미지로부터 정보를 추출하고 질문에 답하는 QA 데이터셋          | 28,299 QA / 18,317 img | https://huggingface.co/datasets/ahmed-masry/ChartQA                               |
 | DeepForm      | 문서 폼 인식을 위한 시각적-텍스트 데이터셋                    | Unknown        | https://github.com/NVIDIA/DeepForm                                                 |
 | DocVQA | 문서 이미지로부터 QA를 수행하는 시각적 문서이해 데이터셋. | Train: 39,463 QA / 10,194 img<br>Val: 5,349 QA / 1,286 img<br>Test: 5,188 QA / 1,287 img | https://www.docvqa.org/datasets/docvqa |
 | DVQA          | 막대 차트를 기반으로 한 자동 질문응답 데이터셋                | Train: 2,325,316 QA / 200,000 img<br>Test-Familiar: 580,557 QA / 50,000 img<br>Test-Novel: 581,321 QA / 50,000 img           | https://github.com/kushalkafle/DVQA_dataset?tab=readme-ov-file                                       |
@@ -54,25 +54,23 @@
 | WildReceipt   | 영수증 이미지의 OCR 및 정보 추출                              | Unknown            | https://paperswithcode.com/dataset/wildreceipt |
 | DocILE        | 문서의 필드 인식 및 구조적 태깅을 위한 벤치마크               | Unknown        | https://docile.rossum.ai/                                                 |
 | WTQ           | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | Unknown            | https://ppasupat.github.io/WikiTableQuestions/                                      |
-| askchart           | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | Unknown            | https://ppasupat.github.io/WikiTableQuestions/                                      |
-| chart2code           | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | Unknown            | https://ppasupat.github.io/WikiTableQuestions/                                      |
-| chartinstruction           | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | Unknown            | https://ppasupat.github.io/WikiTableQuestions/                                      |
-| chartmoe           | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | Unknown            | https://ppasupat.github.io/WikiTableQuestions/                                      |
-| deeprule           | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | Unknown            | https://ppasupat.github.io/WikiTableQuestions/                                      |
-| novachart           | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | Unknown            | https://ppasupat.github.io/WikiTableQuestions/                                      |
-| chart2textpew           | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | Two: 5092 QA<br>Multi: 26476 QA            | https://ppasupat.github.io/WikiTableQuestions/                                      |
-| chart2textstatista           | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | Two: 47404 QA<br>Multi: 11774 QA              | https://ppasupat.github.io/WikiTableQuestions/                                      |
-| chart2textstatista-table           | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | Two: 23702 QA<br>Multi: 5887 QA              | https://ppasupat.github.io/WikiTableQuestions/                                      |
+| askchart                    | 다양한 차트 기반 시각적 질문 응답 태스크를 위한 instruction tuning용 QA 데이터셋           | 2000 QA / 2000 img                                              | https://github.com/yuchenlin/Ask-Chart                                                                  |
+| chart2code                  | 차트 이미지를 분석하여 대응되는 코드(JSON, Vega 등)를 생성하는 차트 리버스엔지니어링 데이터셋 | Unknown                                             | https://github.com/vis-nlp/Chart2Code                                                                    |
+| chartinstruction            | 차트 QA 모델 학습을 위한 instruction-following 스타일의 시각적 질문 응답 데이터셋            | Unknown                                             | https://huggingface.co/datasets/yuchenlin/ChartQA-Instructions                                           |
+| chartmoe                    | 다양한 멀티모달 차트 QA 태스크를 위한 mixture-of-experts 프롬프트 기반 데이터셋             | Unknown                                             | https://github.com/yuchenlin/ChartMoE                                                                    |
+| deeprule                    | 수학적·논리적 규칙 기반 차트 질의응답 태스크를 위한 고난도 차트 QA 데이터셋                 | Unknown                                             | https://github.com/yuchenlin/DeepRule                                                                    |
+| novachart                   | 차트 이미지와 다양한 복합 질의 응답을 포함하는 instruction fine-tuning용 차트 QA 데이터셋     | Unknown                                             | https://huggingface.co/datasets/yuchenlin/NovaChart                                                      |
+| chart2textpew               | Pew Research 기반 차트로부터 자연어 질문·응답을 구성한 QA 데이터셋                          | Two: 5092 QA<br>Multi: 26476 QA                     | https://github.com/yuchenlin/Chart2Text                                                                  |
+| chart2textstatista          | Statista 차트를 기반으로 다양한 단일·복합 질의를 포함한 QA 데이터셋                         | Two: 47404 QA<br>Multi: 11774 QA                    | https://github.com/yuchenlin/Chart2Text                                                                  |
+| chart2textstatista-table    | Statista 테이블 기반 질의응답 데이터셋 (표로부터 직접 질의하는 QA)                          | Two: 23702 QA<br>Multi: 5887 QA                     | https://github.com/yuchenlin/Chart2Text                                                                  |
+| chart2text-8k               | 다양한 웹 차트로부터 생성된 단일·다중 질의응답을 포함한 차트 QA 데이터셋                     | Single: 6415 QA<br>Multi: 1447 QA                   | https://github.com/yuchenlin/Chart2Text                                                                  |
+| chart2text-8k-table         | chart2text-8k의 테이블 기반 질의응답 확장 버전                                               | Single: 6763 QA<br>Multi: 1542 QA                   | https://github.com/yuchenlin/Chart2Text                                                                  |
+| chartllama                  | LLaMA 기반 차트 QA 모델 학습을 위한 instruction fine-tuning 데이터셋                        | Train: 148398 QA                                    | https://huggingface.co/datasets/yuchenlin/ChartLLaMA                                                     |
+| chartsumm                   | 차트를 요약한 문장 기반 QA 쌍을 포함하는 multi-source chart summarization 데이터셋          | TrainK: 34702 QA / TrainS: 32186 QA<br>ValK: 4338 QA / ValS: 4092 QA | https://github.com/yuchenlin/ChartSumm                                                                  |
+| opencqa                     | 다양한 차트 형태와 복합 reasoning이 포함된 open-ended 차트 QA 데이터셋                       | Train: 4605 QA<br>Val: 983                          | https://github.com/yuchenlin/OpenCQA                                                                     |
+| vistext                     | 차트 이미지와 텍스트 결합 기반의 시각 질문 응답 태스크용 차트 QA 데이터셋                   | Train: 9969 QA<br>Val: 1202                         | https://github.com/yuchenlin/VisText                                                                     |
+| chartqa2table               | 기존 ChartQA 데이터를 테이블 형태로 재구성한 차트 QA를 위한 정형화된 QA 데이터셋             | Train: 73268 QA<br>Val: 4224                        | https://github.com/yuchenlin/ChartQA2Table                                                               |
 
-
-| chart2text-8k           | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | Single: 6415 QA<br>Multi: 1447 QA              | https://ppasupat.github.io/WikiTableQuestions/                                      |
-| chart2text-8k-table           | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | Single: 6763 QA<br>Multi: 1542 QA              | https://ppasupat.github.io/WikiTableQuestions/                                      |
-
-| chartllama          | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | Train: 148398 QA            | https://ppasupat.github.io/WikiTableQuestions/                                      |
-| chartsumm          | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | TrainK: 34702 QA / TrainS: 32186 QA<br>ValK: 4338 QA / ValK: 4092 QA           | https://ppasupat.github.io/WikiTableQuestions/                                      |
-| opencqa          | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | Train: 4605 QA<br>Val: 983            | https://ppasupat.github.io/WikiTableQuestions/                                      |
-| vistext          | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | Train: 9969 QA<br>Val: 1202             | https://ppasupat.github.io/WikiTableQuestions/                                      |
-| chartqa2table          | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | Train: 73268 QA<br>Val: 4224             | https://ppasupat.github.io/WikiTableQuestions/                                      |
 
 
 
