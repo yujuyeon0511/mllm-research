@@ -57,6 +57,32 @@
 | OCR-TROSD     | OCR                       | 텍스트 인식을 위한 중국어 OCR 데이터                          | Unknown        | Tianchi                       | https://tianchi.aliyun.com/competition/entrance/531937/introduction                  | Instruction Tuning                  |
 | WTQ           | Table QA                  | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | 22K            | Stanford                      | https://nlp.stanford.edu/software/sempre/#wtq                                        | Instruction Tuning                  |
 
+## LLaVA 모델 학습 데이터
+
+LLaVA (Large Language and Vision Assistant)는 멀티모달 명령어 이해를 위해 다음과 같은 데이터셋을 사용하여 학습되었습니다.
+
+### 1. Feature Alignment (사전학습) 단계
+
+- **사용 데이터:** CC3M (Conceptual Captions 3M)에서 필터링된 약 595K 이미지-텍스트 쌍
+- **학습 목적:** 비전 인코더의 출력을 언어 모델의 임베딩 공간에 정렬하기 위한 투영 행렬 학습
+- **학습 방식:** 비전 인코더와 언어 모델은 고정, 투영 행렬만 학습
+
+### 2. Visual Instruction Tuning (명령어 튜닝) 단계
+
+- **사용 데이터:**
+  - LLaVA-Instruct-150K: GPT-4로 생성된 약 150K 개의 시각 명령어-응답 쌍
+  - 추가적으로 약 515K 개의 VQA 데이터 포함
+- **학습 목적:** 다양한 시각 명령어에 따라 정밀한 응답을 생성하는 능력 강화
+- **학습 방식:** 비전 인코더는 고정하고, 투영 행렬 및 언어 모델을 함께 미세 조정
+
+**참고 링크:**
+- GitHub: [haotian-liu/LLaVA](https://github.com/haotian-liu/LLaVA)
+- 논문: [Visual Instruction Tuning](https://arxiv.org/abs/2304.08485)
+
+## Gemma 모델 학습 토큰 요약
+
+Gemma 3 시리즈는 모델 규모에 따라 서로 다른 양의 토큰으로 학습되었습니다. 가장 큰 **Gemma 3 27B** 모델은 총 **14조(14T)** 토큰으로 학습되었으며, **Gemma 3 12B** 모델은 **12조(12T)** 토큰, **Gemma 3 4B** 모델은 **4조(4T)** 토큰, **Gemma 3 1B** 모델은 **2조(2T)** 토큰으로 각각 학습되었습니다. 이러한 차등적 학습 토큰 설계는 모델 크기에 따른 학습 효율성과 성능 균형을 고려한 구조입니다.
+
 ---
 
 ## 3. Benchmarks
