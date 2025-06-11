@@ -113,7 +113,8 @@ Gemma 3 시리즈는 모델 규모에 따라 서로 다른 양의 토큰으로 �
 - [mPLUG-Owl2](https://github.com/X-PLUG/mPLUG-Owl)
 - [OpenFlamingo](https://github.com/mlfoundations/open_flamingo)
 - [GPT4-Vision-Adapter](https://github.com/Adapter-Hub/GPT4-Vision-Adapter)
-- [Gemma](https://github.com/google/gemma)  
+- [Gemma](https://github.com/google/gemma)
+- [DocKylin](https://github.com/ZZZHANG-jx/DocKylin)
 
 ---
 
