@@ -42,13 +42,14 @@
 | FigureQA      | 도형 차트를 활용한 시각적 QA용 합성 데이터                    | Train: 1,300,000 QA / 100,000 img<br>Test-Familiar: 250,000 QA / 20,000 img<br>Test-Novel: 250,000 QA / 20,000 img          | https://www.microsoft.com/en-us/research/project/figureqa-dataset/downloads/                                              |
 | InfoVQA       | 인포그래픽 기반 복잡한 시각 정보 질의응답                     | Train: 23946 QA / 4406 img<br>Val: 2801 QA / 500 img<br>Test: 3288 QA / 579 img        | https://github.com/Chan1121/InfoVQA                                                |
 | KLC           | 차트 이미지와 대응하는 설명 생성 및 QA                        | Unknown        | https://github.com/salesforce/KLC                                                  |
-| OCRVQA        | OCR 결과와 결합된 QA용 시각문서 데이터셋                      | 1M             | https://rrc.cvc.uab.es/?ch=13&com=introduction                                     |
-| PlotQA        | 플롯 이미지로부터 정보 추출을 위한 QA                         | 224K           | https://github.com/vis-nlp/PlotQA                                                  |
-| PubTabNet     | 표 구조를 인식하고 재구성하기 위한 OCR 데이터                 | 500K           | https://github.com/ibm-aur-nlp/PubTabNet                                           |
-| RVL-CDIP      | 문서 유형 분류를 위한 다양한 스캔 문서                        | 400K           | https://www.cs.cmu.edu/~aharley/rvl-cdip/                                          |
-| SCUT-HCCDoc   | 문서 레이아웃 분석을 위한 구조적 데이터                       | Unknown        | https://github.com/SCUT-HCCDoc/Document_Image_Understanding                        |
-| SynthDog      | 문서 OCR을 위한 합성 데이터셋                                 | Unknown        | https://github.com/clovaai/synthdog                                                |
-| TAT-QA        | 표 데이터를 기반으로 수치적 질의응답을 수행하는 데이터셋      | 16K            | https://github.com/NExTplusplus/TAT-QA                                             |
+| OCRVQA        | OCR 결과와 결합된 QA용 시각문서 데이터셋                      | 1M             | https://ocr-vqa.github.io/                                     |
+| PlotQA        | 플롯 이미지로부터 정보 추출을 위한 QA                         | Train: 20,249,479 QA / 157,070 img<br>Val: 4,360,648 QA / 33,650 img<br>Test: 4,342,514 QA / 33,657 img           | https://github.com/NiteshMethani/PlotQA                                                 |
+| PubTabNet     | 표 구조를 인식하고 재구성하기 위한 OCR 데이터                 | Unknown           | https://github.com/ibm-aur-nlp/PubTabNet                                           |
+| RVL-CDIP      | 문서 유형 분류를 위한 다양한 스캔 문서                        | 400K           | https://huggingface.co/datasets/aharley/rvl_cdip                                          |
+| SynthDog      | 문서 OCR을 위한 합성 데이터셋(영어)                                 | 0.5M        | https://huggingface.co/datasets/naver-clova-ix/synthdog-en                                                |
+| SynthDog-ko      | 문서 OCR을 위한 합성 데이터셋(한국어)                                 | 0.5M        | https://huggingface.co/datasets/naver-clova-ix/synthdog-ko                                                |
+| TAT-QA        | 표 데이터를 기반으로 수치적 질의응답을 수행하는 데이터셋      | 16K            | https://nextplusplus.github.io/TAT-QA/                                            |
+| TAT-DQA        | 문서 데이터를 기반으로 수치적 질의응답을 수행하는 데이터셋      | 16K            | https://nextplusplus.github.io/TAT-DQA/                                             |
 | VisualMRC     | 문서 이미지와 텍스트 기반 다중모달 머신 독해                  | Unknown        | https://github.com/yoheikikuta/visualmrc                                           |
 | WildReceipt   | 영수증 이미지의 OCR 및 정보 추출                              | 25K            | https://github.com/AlibabaResearch/AdvancedLiterateMachinery/tree/main/WildReceipt |
 | DocILE        | 문서의 필드 인식 및 구조적 태깅을 위한 벤치마크               | Unknown        | https://github.com/rossumai/docile                                                 |
