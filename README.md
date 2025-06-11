@@ -37,7 +37,9 @@
 | CCpdf         | 웹에서 수집된 PDF 문서를 기반으로 한 다국어 대규모 데이터셋          | Unknown        | https://github.com/applicaai/CCpdf                                                  |
 | ChartQA(train) | 차트 이미지로부터 정보를 추출하고 질문에 답하는 QA 데이터셋          | 28,299 QA pairs / 18,317 images | https://huggingface.co/datasets/ahmed-masry/ChartQA                               |
 | DeepForm      | 문서 폼 인식을 위한 시각적-텍스트 데이터셋                    | Unknown        | https://github.com/NVIDIA/DeepForm                                                 |
-| DocVQA        | 문서 이미지로부터 QA를 수행하는 시각적 문서이해 데이터셋      | 50K+           | https://docvqa.org/                                                                |
+| DocVQA        | 문서 이미지로부터 QA를 수행하는 시각적 문서이해 데이터셋      | train: 39463 questions /10194 images
+val: 5349 questions / 1286 images
+test: 5188 questions / 1287 images           | https://docvqa.org/                                                                |
 | DVQA          | 막대 차트를 기반으로 한 자동 질문응답 데이터셋                | 300K           | https://www.cs.rochester.edu/u/eakbas/dvqa/                                        |
 | FigureQA      | 도형 차트를 활용한 시각적 QA용 합성 데이터                    | 100K+          | https://datasets.maluuba.com/FigureQA                                              |
 | InfoVQA       | 인포그래픽 기반 복잡한 시각 정보 질의응답                     | Unknown        | https://github.com/Chan1121/InfoVQA                                                |
