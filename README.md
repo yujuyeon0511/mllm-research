@@ -39,8 +39,8 @@
 | DeepForm      | 문서 폼 인식을 위한 시각적-텍스트 데이터셋                    | Unknown        | https://github.com/NVIDIA/DeepForm                                                 |
 | DocVQA | 문서 이미지로부터 QA를 수행하는 시각적 문서이해 데이터셋. | Train: 39,463 QA / 10,194 img<br>Val: 5,349 QA / 1,286 img<br>Test: 5,188 QA / 1,287 img | https://www.docvqa.org/datasets/docvqa |
 | DVQA          | 막대 차트를 기반으로 한 자동 질문응답 데이터셋                | Train: 2,325,316 QA / 200,000 img<br>Test-Familiar: 580,557 QA / 50,000 img<br>Test-Novel: 581,321 QA / 50,000 img           | https://github.com/kushalkafle/DVQA_dataset?tab=readme-ov-file                                       |
-| FigureQA      | 도형 차트를 활용한 시각적 QA용 합성 데이터                    | 100K+          | https://datasets.maluuba.com/FigureQA                                              |
-| InfoVQA       | 인포그래픽 기반 복잡한 시각 정보 질의응답                     | Unknown        | https://github.com/Chan1121/InfoVQA                                                |
+| FigureQA      | 도형 차트를 활용한 시각적 QA용 합성 데이터                    | Train: 1,300,000 QA / 100,000 img<br>Test-Familiar: 250,000 QA / 20,000 img<br>Test-Novel: 250,000 QA / 20,000 img          | https://www.microsoft.com/en-us/research/project/figureqa-dataset/downloads/                                              |
+| InfoVQA       | 인포그래픽 기반 복잡한 시각 정보 질의응답                     | Train: 23946 QA / 4406 img<br>Val: 2801 QA / 500 img<br>Test: 3288 QA / 579 img        | https://github.com/Chan1121/InfoVQA                                                |
 | KLC           | 차트 이미지와 대응하는 설명 생성 및 QA                        | Unknown        | https://github.com/salesforce/KLC                                                  |
 | OCRVQA        | OCR 결과와 결합된 QA용 시각문서 데이터셋                      | 1M             | https://rrc.cvc.uab.es/?ch=13&com=introduction                                     |
 | PlotQA        | 플롯 이미지로부터 정보 추출을 위한 QA                         | 224K           | https://github.com/vis-nlp/PlotQA                                                  |
