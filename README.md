@@ -32,29 +32,30 @@
 
 아래 표는 MLLM의 사전학습(Pre-training) 및 명령어 튜닝(Instruction Tuning)을 위해 사용된 주요 데이터셋을 정리한 것입니다. 각 데이터셋의 모달리티, 설명, 크기, 출처, 사용 단계가 포함되어 있습니다.
 
-| Dataset       | Description                                                   | Size           | Source                        | Link                                                                                 |
-|:--------------|:--------------------------------------------------------------|:---------------|:------------------------------|:-------------------------------------------------------------------------------------|
-| CCpdf         | 웹에서 수집된 PDF 문서를 기반으로 한 다국어 대규모 데이터셋          | Unknown        | Hugging Face                  | https://github.com/applicaai/CCpdf                                                  |
-| ChartQA(train) | 차트 이미지로부터 정보를 추출하고 질문에 답하는 QA 데이터셋          | 28,299 QA pairs / 18,317 images | UW           | https://huggingface.co/datasets/ahmed-masry/ChartQA                               |
-| DeepForm      | 문서 폼 인식을 위한 시각적-텍스트 데이터셋                    | Unknown        | NVIDIA                        | https://github.com/NVIDIA/DeepForm                                                 |
-| DocVQA        | 문서 이미지로부터 QA를 수행하는 시각적 문서이해 데이터셋      | 50K+           | Microsoft                     | https://docvqa.org/                                                                |
-| DVQA          | 막대 차트를 기반으로 한 자동 질문응답 데이터셋                | 300K           | Rochester                     | https://www.cs.rochester.edu/u/eakbas/dvqa/                                        |
-| FigureQA      | 도형 차트를 활용한 시각적 QA용 합성 데이터                    | 100K+          | Maluuba                       | https://datasets.maluuba.com/FigureQA                                              |
-| InfoVQA       | 인포그래픽 기반 복잡한 시각 정보 질의응답                     | Unknown        | Chan et al.                   | https://github.com/Chan1121/InfoVQA                                                |
-| KLC           | 차트 이미지와 대응하는 설명 생성 및 QA                        | Unknown        | Salesforce                    | https://github.com/salesforce/KLC                                                  |
-| OCRVQA        | OCR 결과와 결합된 QA용 시각문서 데이터셋                      | 1M             | IIT                           | https://rrc.cvc.uab.es/?ch=13&com=introduction                                     |
-| PlotQA        | 플롯 이미지로부터 정보 추출을 위한 QA                         | 224K           | UW                            | https://github.com/vis-nlp/PlotQA                                                  |
-| PubTabNet     | 표 구조를 인식하고 재구성하기 위한 OCR 데이터                 | 500K           | IBM                           | https://github.com/ibm-aur-nlp/PubTabNet                                           |
-| RVL-CDIP      | 문서 유형 분류를 위한 다양한 스캔 문서                        | 400K           | CMU                           | https://www.cs.cmu.edu/~aharley/rvl-cdip/                                          |
-| SCUT-HCCDoc   | 문서 레이아웃 분석을 위한 구조적 데이터                       | Unknown        | SCUT                          | https://github.com/SCUT-HCCDoc/Document_Image_Understanding                        |
-| SynthDog      | 문서 OCR을 위한 합성 데이터셋                                 | Unknown        | CLOVA AI                      | https://github.com/clovaai/synthdog                                                |
-| TAT-QA        | 표 데이터를 기반으로 수치적 질의응답을 수행하는 데이터셋      | 16K            | NExT++                        | https://github.com/NExTplusplus/TAT-QA                                             |
-| VisualMRC     | 문서 이미지와 텍스트 기반 다중모달 머신 독해                  | Unknown        | Yahoo Japan                   | https://github.com/yoheikikuta/visualmrc                                           |
-| WildReceipt   | 영수증 이미지의 OCR 및 정보 추출                              | 25K            | Alibaba                       | https://github.com/AlibabaResearch/AdvancedLiterateMachinery/tree/main/WildReceipt |
-| DocILE        | 문서의 필드 인식 및 구조적 태깅을 위한 벤치마크               | Unknown        | Rossum                        | https://github.com/rossumai/docile                                                 |
-| InsuranceQA   | 보험 관련 FAQ에 대한 질의응답 데이터셋                        | 27K            | Studio Ousia                  | https://github.com/shuzi/insuranceQA                                               |
-| OCR-TROSD     | 텍스트 인식을 위한 중국어 OCR 데이터                          | Unknown        | Tianchi                       | https://tianchi.aliyun.com/competition/entrance/531937/introduction                |
-| WTQ           | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | 22K            | Stanford                      | https://nlp.stanford.edu/software/sempre/#wtq                                      |
+| Dataset       | Description                                                   | Size           | Link                                                                                 |
+|:--------------|:--------------------------------------------------------------|:---------------|:-------------------------------------------------------------------------------------|
+| CCpdf         | 웹에서 수집된 PDF 문서를 기반으로 한 다국어 대규모 데이터셋          | Unknown        | https://github.com/applicaai/CCpdf                                                  |
+| ChartQA(train) | 차트 이미지로부터 정보를 추출하고 질문에 답하는 QA 데이터셋          | 28,299 QA pairs / 18,317 images | https://huggingface.co/datasets/ahmed-masry/ChartQA                               |
+| DeepForm      | 문서 폼 인식을 위한 시각적-텍스트 데이터셋                    | Unknown        | https://github.com/NVIDIA/DeepForm                                                 |
+| DocVQA        | 문서 이미지로부터 QA를 수행하는 시각적 문서이해 데이터셋      | 50K+           | https://docvqa.org/                                                                |
+| DVQA          | 막대 차트를 기반으로 한 자동 질문응답 데이터셋                | 300K           | https://www.cs.rochester.edu/u/eakbas/dvqa/                                        |
+| FigureQA      | 도형 차트를 활용한 시각적 QA용 합성 데이터                    | 100K+          | https://datasets.maluuba.com/FigureQA                                              |
+| InfoVQA       | 인포그래픽 기반 복잡한 시각 정보 질의응답                     | Unknown        | https://github.com/Chan1121/InfoVQA                                                |
+| KLC           | 차트 이미지와 대응하는 설명 생성 및 QA                        | Unknown        | https://github.com/salesforce/KLC                                                  |
+| OCRVQA        | OCR 결과와 결합된 QA용 시각문서 데이터셋                      | 1M             | https://rrc.cvc.uab.es/?ch=13&com=introduction                                     |
+| PlotQA        | 플롯 이미지로부터 정보 추출을 위한 QA                         | 224K           | https://github.com/vis-nlp/PlotQA                                                  |
+| PubTabNet     | 표 구조를 인식하고 재구성하기 위한 OCR 데이터                 | 500K           | https://github.com/ibm-aur-nlp/PubTabNet                                           |
+| RVL-CDIP      | 문서 유형 분류를 위한 다양한 스캔 문서                        | 400K           | https://www.cs.cmu.edu/~aharley/rvl-cdip/                                          |
+| SCUT-HCCDoc   | 문서 레이아웃 분석을 위한 구조적 데이터                       | Unknown        | https://github.com/SCUT-HCCDoc/Document_Image_Understanding                        |
+| SynthDog      | 문서 OCR을 위한 합성 데이터셋                                 | Unknown        | https://github.com/clovaai/synthdog                                                |
+| TAT-QA        | 표 데이터를 기반으로 수치적 질의응답을 수행하는 데이터셋      | 16K            | https://github.com/NExTplusplus/TAT-QA                                             |
+| VisualMRC     | 문서 이미지와 텍스트 기반 다중모달 머신 독해                  | Unknown        | https://github.com/yoheikikuta/visualmrc                                           |
+| WildReceipt   | 영수증 이미지의 OCR 및 정보 추출                              | 25K            | https://github.com/AlibabaResearch/AdvancedLiterateMachinery/tree/main/WildReceipt |
+| DocILE        | 문서의 필드 인식 및 구조적 태깅을 위한 벤치마크               | Unknown        | https://github.com/rossumai/docile                                                 |
+| InsuranceQA   | 보험 관련 FAQ에 대한 질의응답 데이터셋                        | 27K            | https://github.com/shuzi/insuranceQA                                               |
+| OCR-TROSD     | 텍스트 인식을 위한 중국어 OCR 데이터                          | Unknown        | https://tianchi.aliyun.com/competition/entrance/531937/introduction                |
+| WTQ           | 웹 테이블을 이용한 복잡한 질의응답 데이터셋                   | 22K            | https://nlp.stanford.edu/software/sempre/#wtq                                      |
+
 
 
 ## 3. LLaVA 모델 학습 데이터
