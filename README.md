@@ -73,6 +73,7 @@
 | ReachQA               | 기존 ChartQA 데이터를 테이블 형태로 재구성한 차트 QA를 위한 정형화된 QA 데이터셋             | Train: 73268 QA<br>Val: 4224                        | https://github.com/hewei2001/ReachQA                              |
 | ReFocus               | 기존 ChartQA 데이터를 테이블 형태로 재구성한 차트 QA를 위한 정형화된 QA 데이터셋             | Train: 73268 QA<br>Val: 4224                        | https://github.com/zeyofu/ReFocus_Code |
 | the_cauldron               | The Cauldron contains only the train split of each sub-datasets. On top of that, we removed the few examples containing an image also present in the test splits of MMMU, MathVista or MMBench.            |                         | https://huggingface.co/datasets/HuggingFaceM4/the_cauldron |
+| LLaVA-OneVision-Data                | Dataset Card for LLaVA-OneVision            |                         | https://huggingface.co/datasets/lmms-lab/LLaVA-OneVision-Data |
 
 ## 3. LLaVA 모델 학습 데이터
 
