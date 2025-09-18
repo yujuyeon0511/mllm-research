@@ -112,7 +112,7 @@ Gemma 3 시리즈는 모델 규모에 따라 서로 다른 양의 토큰으로 �
 | ChartQA | Chart Image Comprehension | Visual QA | [ChartQA](https://github.com/vis-nlp/ChartQA) |
 | ScienceQA | Multimodal Science QA | Multichoice Reasoning | [ScienceQA](https://github.com/lupantech/ScienceQA) |
 | MathBench | Text + Diagram + Equation Reasoning | Mixed | [MathBench](https://mathbench.github.io/) |
-| MuirBench | MuirBench is a benchmark containing 11,264 images and 2,600 multiple-choice questions, providing robust evaluation on 12 multi-image understanding tasks. | Mixed | [MuirBench](muirbench.github.io) |
+| MuirBench | MuirBench is a benchmark containing 11,264 images and 2,600 multiple-choice questions, providing robust evaluation on 12 multi-image understanding tasks. | Mixed | [MuirBench](https://muirbench.github.io/) |
 
 
 ---
